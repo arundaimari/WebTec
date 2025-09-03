@@ -1,31 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Simple Blog Post</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f6fb;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #fff;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            padding: 32px;
+        }
+        h1 {
+            color: #2d3e50;
+            margin-bottom: 12px;
+        }
+        .meta {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 24px;
+        }
+        p {
+            line-height: 1.7;
+            color: #444;
+        }
+        .author {
+            margin-top: 32px;
+            font-style: italic;
+            color: #5a6d85;
+        }
+        a {
+            color: #3b7ddd;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>My Simple Blog</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <h2>Welcome to My Blog!</h2>
-            <p>Posted on September 3, 2025 by <strong>Lenovo</strong></p>
-            <p>
-                This is a simple blog post example. You can write about your favorite topics, share your thoughts, or document your experiences here.
-            </p>
-        </article>
-    </main>
-    <footer>
-        &copy; 2025 My Simple Blog
-    </footer>
+    <div class="container">
+        <h1>Welcome to My Blog!</h1>
+        <div class="meta">Posted on September 3, 2025 by <a href="index.html">Click here</a></div>
+        <p>
+            This is my first blog post. I’m excited to share my thoughts and experiences with you!
+            In this blog, I’ll write about web development, technology trends, and personal growth.
+        </p>
+        <p>
+            Stay tuned for more updates and feel free to leave your comments below.
+        </p>
+        <div class="author">
+            — Click here
+        </div>
+    </div>
 </body>
 </html>
+
