@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+    }
+    .main-image {
+      width: 500px;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 2px solid #333;
+      border-radius: 8px;
+    }
+    .thumbnails {
+      display: flex;
+      gap: 10px;
+    }
+    .thumbnails img {
+      width: 100px;
+      height: 60px;
+      object-fit: cover;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      transition: border 0.3s ease;
+    }
+    .thumbnails img:hover {
+      border: 2px solid #ff9800;
+    }
+  </style>
+</head>
+<body>
+
+  <img id="mainImage" class="main-image" src="voll.jpg" alt="Main Image">
+
+  <div class="thumbnails">
+    <img src="foodball.jpg" alt="Thumb1">
+    <img src="mardhon.jpg" alt="Thumb2">
+    <img src="girl volley.jpg" alt="Thumb3">
+    <img src="voll.jpg" alt="Thumb4">
+  </div>
+
+  <script>
+    const mainImage = document.getElementById("mainImage");
+    const thumbnails = document.querySelectorAll(".thumbnails img");
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener("click", () => {
+        mainImage.src = thumbnail.src;
+      });
+    });
+  </script>
+
+</body>
+</html>
